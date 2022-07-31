@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Initium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button"><b>I</b>n<b>i</b>t<b>i</b>um</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#products" class="w3-bar-item w3-button">Products</a>
+        <a href="#company" class="w3-bar-item w3-button">Company</a>
+        <a href="#careers" class="w3-bar-item w3-button">Careers</a>
+      </div>        
+  </div>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="header-1 w3-display-middle" id="header">
+    <h1>We seek to change lives.</h1>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-32" id="about">
+  <h3 class="w3-center">Initium Technologies Pte Ltd is a company that creates life changing encounters for individuals from any background to fulfill their fullest potential and achieve their dreams. </h3>
+  <p class="w3-center"><em></em></p>
+  <p></p>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="company-logo">
+  <div class="w3-display-container w3-center">
+    <img src="./images/Initium - Logos1.png" alt="initiumlogo">
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="story">
+  <p class="w3-large w3-center w3-padding-16">As CEO, Ayumi Hidaka was from Tanegashima, Kagoshima prefecture. She started a matching app with more than 1.6 million members by herself. She believes everyone will be able to pursue their dreams
+    without being influenced by their financial situation, background, or current environment.:</p>
+</div>
+
+<!-- Products Header --->
+<div class="w3-display-container w3-padding-64">
+  <div class="header-2 w3-display-middle" id="header">
+    <h1>Products</h1>
+  </div>
+</div>
+
+<!-- Products Grid --->
+<div class="row">
+  <div class="column">
+    <p class="w3-center w3-hover-opacity">
+      <a href="https://amicaapp.jp/"><img src="./images/Amica.jpg" style="width:100%">
+      </i></p></a>
+  </div>
+  
+  <div class="column">
+    <p class="w3-center w3-hover-opacity">
+      <a href="https://paters.jp/">
+        <img src="./images/Paters.jpg" style="width:100%">
+      </i></p></a>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
