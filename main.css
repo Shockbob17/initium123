@@ -1,10 +1,20 @@
 <style>
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
+body{
+  font-family: "Inter";
+}
+
+body, html, h1,h2,h3,h4,h5,h6 {
   height: 100%;
   color: #000;
   line-height: 1.8;
+  font-family: "Inter";
+}
+
+h0 {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 32px;
 }
 
 /* Create a Parallax Effect */
@@ -20,17 +30,13 @@ body, html {
 .bgimg-1 {
   background-image: url('./images/ball.gif');
   min-height: 100%;
+  font-family: "Inter";
 } 
 
 /* Initium logo (Logo) */
-img {
+img1 {
   width: auto;
   height: auto;
-} 
-
-/* about us background (Logo) */
-abtus-1 {
-  background-color:aquamarine;
 } 
 
 /* Create two equal columns that floats next to each other */
