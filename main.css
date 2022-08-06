@@ -28,6 +28,11 @@ img {
   height: auto;
 } 
 
+/* about us background (Logo) */
+abtus-1 {
+  background-color:aquamarine;
+} 
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
